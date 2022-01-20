@@ -1,0 +1,148 @@
+p, h1, h2, h3, h4, h5, h6, span, a{
+  font-family: 'Avenir Next', sans-serif;
+}
+
+
+.tCenter{
+  text-align: center;
+}
+
+.jCenter{
+  justify-content: center;
+}
+
+.blue{
+  color: #4D61FC;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+.white{
+  color: white;
+}
+
+.yellow{
+  color: yellow;
+}
+.bgBlue{
+  background-color: #4D61FC;
+}
+
+.fullHeight{
+  height: 100vh !important;
+}
+
+.flex{
+  display: flex;
+}
+
+@font-face {
+  font-family: 'Avenir Next Demi';
+  src: url('../fonts/Avenir Next/AvenirNext-DemiBold.woff2') format('woff2'),
+  url('../fonts/Avenir Next/AvenirNext-DemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/Avenir Next/AvenirNext-Heavy.woff2') format('woff2'),
+  url('../fonts/Avenir Next/AvenirNext-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/Avenir Next/AvenirNext-BoldItalic.woff2') format('woff2'),
+  url('../fonts/Avenir Next/AvenirNext-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/Avenir Next/AvenirNext-Bold.woff2') format('woff2'),
+  url('../fonts/Avenir Next/AvenirNext-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/Avenir Next/AvenirNext-HeavyItalic.woff2') format('woff2'),
+  url('../fonts/Avenir Next/AvenirNext-HeavyItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next Demi';
+  src: url('../fonts/Avenir Next/AvenirNext-DemiBoldItalic.woff2') format('woff2'),
+  url('../fonts/Avenir Next/AvenirNext-DemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/Avenir Next/AvenirNext-Italic.woff2') format('woff2'),
+  url('../fonts/Avenir Next/AvenirNext-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/Avenir Next/AvenirNext-Medium.woff2') format('woff2'),
+  url('../fonts/Avenir Next/AvenirNext-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/Avenir Next/AvenirNext-MediumItalic.woff2') format('woff2'),
+  url('../fonts/Avenir Next/AvenirNext-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/Avenir Next/AvenirNext-Regular.woff2') format('woff2'),
+  url('../fonts/Avenir Next/AvenirNext-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next Ultra';
+  src: url('../fonts/Avenir Next/AvenirNext-UltraLightItalic.woff2') format('woff2'),
+  url('../fonts/Avenir Next/AvenirNext-UltraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next Ultra';
+  src: url('../fonts/Avenir Next/AvenirNext-UltraLight.woff2') format('woff2'),
+  url('../fonts/Avenir Next/AvenirNext-UltraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
