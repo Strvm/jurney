@@ -1,4 +1,4 @@
-p, h1, h2, h3, h4, h5, h6, span, a {
+input, p, h1, h2, h3, h4, h5, h6, span, a {
   font-family: "Avenir Next", sans-serif;
 }
 
@@ -36,6 +36,14 @@ p, h1, h2, h3, h4, h5, h6, span, a {
 
 .flex {
   display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
 }
 
 @font-face {
