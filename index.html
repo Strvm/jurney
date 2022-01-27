@@ -5,30 +5,32 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jurney</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/utils.css">
 </head>
-<body>
-    <img src="images/logo.png" class="logo">
-    <img src="images/map.png" class="map">
+<body id="swup" class="transition-fade">
+    <img src="images/logo.png" class="logo" data-aos="fade-right">
+    <img src="images/map.png" class="map" data-aos="fade-left">
     <main class="mainContainerFullHeight">
         <div class="mainText">
-            <h1>Découvrez un lieu comme si vous y viviez.</h1>
-            <p>Au lieu de planifier votre voyage, choisissez le lieu, ce que vous aimeriez faire, et on s’occupe du reste.</p>
-            <input type="text" class="location" placeholder="Location">
-            <button class="search">
-                <h3>Découvrir</h3>
+            <h1 data-aos="fade-down">Découvrez un lieu comme si vous y viviez.</h1>
+            <p data-aos="fade-down">Au lieu de planifier votre voyage, choisissez le lieu, ce que vous aimeriez faire, et on s’occupe du reste.</p>
+            <input type="text" class="location" placeholder="Location" data-aos="fade-down">
+            <button class="search" on data-aos="fade-down">
+                <h3 data-aos="fade-down">Découvrir</h3>
             </button>
         </div>
     </main>
     <main class="mainContainerFullHeight">
-        <div class="flex">
+        <div class="flex locationFlex">
             <img src="images/locations.png" class="locations">
             <div class="text">
-                <h1>Découvrez un lieu comme si vous y viviez.</h1>
-                <p>Au lieu de planifier votre voyage, choisissez le lieu, ce que vous aimeriez faire, et on s’occupe du reste.</p>
-                <button class="search">
-                    <h3>Découvrir</h3>
+                <h1 data-aos="fade-down">Découvrez un lieu comme si vous y viviez.</h1>
+                <p> data-aos="fade-down"Au lieu de planifier votre voyage, choisissez le lieu, ce que vous aimeriez faire, et on s’occupe du reste.</p>
+                <button class="search" data-aos="fade-down">
+                    <h3 data-aos="fade-down">Découvrir</h3>
                 </button>
             </div>
         </div>
@@ -37,32 +39,39 @@
         <div class="cards">
             <div class="halfCard card1">
                 <div class="cardText">
-                    <h1>Des expériences à vivre pendant votre voyage</h1>
-                    <button class="search">
-                        <h3>Découvrir</h3>
+                    <h1 data-aos="fade-down">Des expériences à vivre pendant votre voyage</h1>
+                    <button class="search" data-aos="fade-down">
+                        <h3 data-aos="fade-down">Découvrir</h3>
                     </button>
                 </div>
 
             </div>
             <div class="halfCard card2">
                 <div class="cardText">
-                    <h1>Des expériences à vivre pendant votre voyage</h1>
-                    <button class="search">
-                        <h3>Découvrir</h3>
+                    <h1 data-aos="fade-down">Des expériences à vivre pendant votre voyage</h1>
+                    <button class="search" data-aos="fade-down">
+                        <h3 data-aos="fade-down">Découvrir</h3>
                     </button>
                 </div>
             </div>
             <div class="fullCard card3">
                 <div class="cardText">
-                    <h1>Venes découvrir notre incoyable communauté de créateur d’expérience.</h1>
-                    <button class="search">
-                        <h3>Découvrir</h3>
+                    <h1 data-aos="fade-down">Venez découvrir notre incoyable communauté de créateur d’expérience.</h1>
+                    <button class="search" data-aos="fade-down">
+                        <h3 data-aos="fade-down">Découvrir</h3>
                     </button>
                 </div>
             </div>
         </div>
 
     </main>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js">
+        const swup = new Swup();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
