@@ -169,6 +169,7 @@ mainDiscover.addEventListener("click", (event) =>{
         formQuestion.innerHTML = `Que voulez vous faire à <span class=\"blueText\">${place}</span>?`
         form.style.display = "block"
 
+
     }
 })
 
