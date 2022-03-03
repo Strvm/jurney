@@ -144,7 +144,7 @@ nextButton.addEventListener("click", (event) =>{
                 setTimeout(() =>{
                     document.body.style.cursor = "initial"
                     daySelector.remove()
-                    nextButton.remove()
+                    // nextButton.remove()
                     formQuestion.innerHTML = `Bonne nouvelle!`
                     formQuestion.style.margin = "0"
                     amountFound.innerHTML = `On vous a trouvé <span class="blueText"><strong>${getRandomInt(10, 30)}</strong></span> trajets à <span class="blueText"><strong>${place}</strong></span> selon vos filtres, venez les découvrir par vous même`
@@ -154,13 +154,18 @@ nextButton.addEventListener("click", (event) =>{
                 }, 1500);
             }
             break
+        case 3:
+            if (emailInput.value != "" && validateEmail(emailInput.value)){
+                location.reload()
+            }
+            break
     }
 })
 
 
 mainDiscover.addEventListener("click", (event) =>{
     if (place != ""){
-        console.log(place);
+        document.body.style.overflow = "hidden"
         formQuestion.innerHTML = `Que voulez vous faire à <span class=\"blueText\">${place}</span>?`
         form.style.display = "block"
 
@@ -177,3 +182,12 @@ function removeAllChildNodes(parent) {
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
+
+
+const validateEmail = (email) => {
+    return String(email)
+        .toLowerCase()
+        .match(
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        );
+};

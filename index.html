@@ -5,14 +5,16 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jurney</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/utils.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body id="swup" class="transition-fade">
-<section class="form">
-    <main class="formContainer">
+<section class="form" data-aos="fade-down">
+    <main class="formContainer" data-aos="fade-down">
         <div class="form-text">
             <h2 class="formQuestion">Que voulez vous faire à <span class="blueText">Paris</span>?</h2>
             <p class="amountFound"></p>
@@ -21,9 +23,10 @@
             </div>
             <div class="chosenActivities"></div>
             <input type="number" class="daySelector" placeholder="7" data-aos="fade-down">
+            <input type="email" class="emailInput" placeholder="Email" data-aos="fade-down">
+
             <div class="nextButton"><h3>Continuer</h3></div>
 
-            <input type="email" class="emailInput" placeholder="Email" data-aos="fade-down">
 
         </div>
     </main>
@@ -31,7 +34,7 @@
 
 
 <img src="images/logo.png" class="logo" data-aos="fade-right">
-<img src="images/map.png" class="map" data-aos="fade-leftz">
+<img src="images/map.png" class="map" data-aos="fade-left">
 <main class="mainContainerFullHeight">
     <div class="mainText">
         <h1 data-aos="fade-down">Découvrez un lieu comme si vous y viviez.</h1>
@@ -39,8 +42,8 @@
             s’occupe du reste.</p>
         <input type="text" class="location" placeholder="Location" data-aos="fade-down">
 
-        <button class="search mainDiscover" on data-aos="fade-down">
-            <h3 data-aos="fade-down">Découvrir</h3>
+        <button class="search mainDiscover" data-aos="fade-down">
+            <h3 data-aos="fade-down" class="discoverText">Découvrir</h3>
         </button>
     </div>
 </main>

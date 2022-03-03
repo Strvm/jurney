@@ -54,16 +54,18 @@ body {
     font-size: 1.1rem;
   }
 
-  .search {
+  .search, .search::after {
     border: none;
     background-color: #072AC8;
     color: white;
     transition: background-color 600ms ease, color 200ms ease;
 
-    h3 {
-      margin: 0;
-    }
+
   }
+  h3 {
+    margin: 0 !important;
+  }
+
 
   .search:hover {
     border: #072AC8 1px solid;

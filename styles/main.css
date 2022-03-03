@@ -50,14 +50,14 @@ body {
   text-align: center;
   font-size: 1.1rem;
 }
-.mainText .search {
+.mainText .search, .mainText .search::after {
   border: none;
   background-color: #072AC8;
   color: white;
   transition: background-color 600ms ease, color 200ms ease;
 }
-.mainText .search h3 {
-  margin: 0;
+.mainText h3 {
+  margin: 0 !important;
 }
 .mainText .search:hover {
   border: #072AC8 1px solid;
