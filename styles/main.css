@@ -16,6 +16,7 @@ body {
 .logo {
   position: absolute;
   padding: 20px;
+  z-index: 100000000;
 }
 
 .mainContainerFullHeight {
@@ -200,6 +201,135 @@ body {
   .cards .halfCard {
     width: 100%;
   }
+}
+.form {
+  display: none;
+  overflow-x: auto;
+  z-index: 1000;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  margin: 0;
+}
+.form .amountFound {
+  display: none;
+}
+.form .emailInput {
+  display: none;
+  border: black 1px solid;
+  box-shadow: inset 0 0 3px black;
+  width: 300px;
+  height: 40px;
+  border-radius: 50px;
+  margin: 5px;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.form .nextButton {
+  width: 150px;
+  background-color: #072AC8;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin: 0 auto;
+  border-radius: 50px;
+  user-select: none;
+  margin-top: 50px;
+}
+.form .daySelector {
+  display: none;
+  text-align: center;
+  border: none;
+  font-size: 2em;
+  background-color: transparent;
+  appearance: none;
+  width: 80px;
+  border-bottom: black 1px solid;
+  margin: 0 auto;
+}
+.form input::-webkit-outer-spin-button,
+.form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form .chosenActivities {
+  display: flex;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 300px;
+  margin: 5px;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.form .chosenActivities .chosenActivity {
+  flex-grow: 1;
+  padding: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+  background-color: #072AC8;
+  color: white;
+  margin: 3px;
+}
+.form .formContainer {
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+.form .formContainer .form-text {
+  text-align: center;
+}
+.form .formContainer .form-text .typeSearch {
+  text-transform: capitalize;
+  margin-bottom: 50px;
+  display: block;
+  box-shadow: inset 0 0 3px #4D61FC;
+  width: 300px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  text-align: center;
+  background-color: #f5f6fa;
+  font-size: 1.1rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form .formContainer .form-text .typeSearch .activityName {
+  user-select: none;
+}
+.form .formContainer .form-text .typeSearch .activityName:hover {
+  cursor: pointer;
+}
+.form .formContainer .activitySearch {
+  text-transform: capitalize;
+  display: block;
+  border: #4D61FC 1px solid;
+  box-shadow: inset 0 0 3px #4D61FC;
+  width: 300px;
+  height: 40px;
+  border-radius: 50px;
+  margin: 5px;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 0 auto;
+}
+.form .blueText {
+  color: #072AC8;
+  text-transform: capitalize;
+}
+
+.formQuestion {
+  font-size: 2.4em;
 }
 
 /*# sourceMappingURL=main.css.map */
