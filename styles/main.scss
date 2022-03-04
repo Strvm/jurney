@@ -209,7 +209,9 @@ body {
 
 @media screen and (max-width: 600px) {
 
-
+.formContainer{
+  width: 80vw;
+}
   .logo {
     left: 33%;
     padding: 0;
